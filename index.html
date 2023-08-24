@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Угадай число</title>
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+    <h1>Угадай число!</h1>
+    <p>Введите число от 1 до 100:</p>
+    <input type="number" id="guessInput">
+    <button onclick="checkGuess()">Проверить</button>
+    <p id="result"></p>
+
+    <script>
+        async function checkGuess() {
+            const guessInput = document.getElementById("guessInput");
+            const result = document.getElementById("result");
+            const guess = guessInput.value;
+            
+            if (!guess) {
+                result.innerText = "Введите число!";
+                return;
+            }
+            
+            result.innerText = await eel.check_guess(guess)();
+        }
+    </script>
+</body>
+</html>
