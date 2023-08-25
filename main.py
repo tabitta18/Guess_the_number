@@ -5,7 +5,7 @@ import eel
 eel.init('web')
 
 # Генерация случайного числа
-number_to_guess = random.randint(1, 100)
+number_to_guess = random.randint(1, 50)
 
 # Функция для проверки угаданного числа
 @eel.expose
