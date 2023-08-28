@@ -19,4 +19,4 @@ def check_guess(guess):
         return "Верно!"
 
 # Запуск Eel с веб-интерфейсом
-eel.start('index.html', size=(400, 200))
+eel.start('index.html', size=(720, 480))
