@@ -12,9 +12,9 @@ number_to_guess = random.randint(1, 50)
 def check_guess(guess):
     guess = int(guess)
     if guess < number_to_guess:
-        return "Мало!"
+        return "Мало"
     elif guess > number_to_guess:
-        return "Много!"
+        return "Много"
     else:
         return "Верно!"
 
