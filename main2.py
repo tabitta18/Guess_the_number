@@ -7,7 +7,7 @@ def guess_number():
     print("Привет! Давай сыграем в игру 'Угадай число'.")
 
     while True:
-        guess = int(input("Угадай число от 1 до 100: "))
+        guess = int(input("Угадай число от 1 до 50: "))
         attempts += 1
 
         if guess < secret_number:
