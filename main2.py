@@ -1,7 +1,7 @@
 import random
 
 def guess_number():
-    secret_number = random.randint(1, 100)
+    secret_number = random.randint(1, 50)
     attempts = 0
 
     print("Давай сыграем в игру 'Угадай число'.")
